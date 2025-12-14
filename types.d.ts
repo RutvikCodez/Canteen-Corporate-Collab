@@ -1,0 +1,3 @@
+type menuHeaderProps = {
+    tableNumber: string;
+}
