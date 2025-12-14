@@ -1,9 +1,9 @@
+import CartDrower from "./CartDrower";
 
-const Header = ({ tableNumber, ...props }: menuHeaderProps) => {
+const Header = () => {
   return (
     <header
       className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-lg"
-      {...props}
     >
       <div className="max-w-7xl w-full mx-auto flex items-center justify-between py-2 max-xl:px-4">
         <div>
@@ -14,7 +14,7 @@ const Header = ({ tableNumber, ...props }: menuHeaderProps) => {
             Authentic Italian cuisine
           </p>
         </div>
-        <div className="text-2xl font-bold max-md:hidden">Table {tableNumber}</div>
+        <CartDrower />
       </div>
     </header>
   );
