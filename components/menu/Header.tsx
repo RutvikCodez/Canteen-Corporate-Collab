@@ -4,7 +4,7 @@ const Header = ({ tableNumber, ...props }: menuHeaderProps) => {
       className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-lg"
       {...props}
     >
-      <div className="max-w-7xl w-full mx-auto flex items-center justify-between py-2">
+      <div className="max-w-7xl w-full mx-auto flex items-center justify-between py-2 max-xl:px-4">
         <div>
           <h1 className="text-xl md:text-2xl font-serif font-bold">
             Restaurant Name
@@ -13,7 +13,7 @@ const Header = ({ tableNumber, ...props }: menuHeaderProps) => {
             Authentic Italian cuisine
           </p>
         </div>
-        <div className="text-2xl font-bold">Table {tableNumber}</div>
+        <div className="text-2xl font-bold max-md:hidden">Table {tableNumber}</div>
       </div>
     </header>
   );
