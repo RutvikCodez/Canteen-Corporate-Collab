@@ -1,20 +1,20 @@
 type menuHeaderProps = {
-    tableNumber: string;
-}
+  tableNumber: string;
+};
 
 type itemCardProps = {
-    _id: string;
-    name: string;
-    description: string;
-    price: number;
-    image: string;
-    quantity: number;
-}
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  quantity: number;
+};
 
 type foodCategoryType = {
-    category: string;
-    items: itemCardProps[];
-}
+  category: string;
+  items: itemCardProps[];
+};
 
 type CartState = {
   items: itemCardProps[];
@@ -23,4 +23,14 @@ type CartState = {
   decreaseQty: (_id: string) => void;
   removeItem: (_id: string) => void;
   clearCart: () => void;
+  open: boolean;
+  setOpen: (open: boolean) => void;
+};
+
+type confirmationModalProps = {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+  orderTotal: number;
+  items: itemCardProps[];
+  tableId: string | number;
 };

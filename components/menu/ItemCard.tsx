@@ -14,7 +14,7 @@ const ItemCard = ({
   quantity,
   ...props
 }: itemCardProps) => {
-  const { addToCart } = useCartStore();
+  const { addToCart, setOpen } = useCartStore();
   return (
     <Card
       className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-0"
@@ -37,9 +37,10 @@ const ItemCard = ({
           <Button
             className="w-full mt-3 relative overflow-hidden"
             size="lg"
-            onClick={() =>
-              addToCart({ _id, name, price, image, quantity, description })
-            }
+            onClick={() => {
+              addToCart({ _id, name, price, image, quantity, description });
+              setOpen(true);
+            }}
           >
             <Plus />
             Add to Cart

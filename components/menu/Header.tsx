@@ -1,6 +1,6 @@
 import CartDrower from "./CartDrower";
 
-const Header = () => {
+const Header = ({ tableId }: { tableId: string }) => {
   return (
     <header
       className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-lg"
@@ -14,7 +14,7 @@ const Header = () => {
             Authentic Italian cuisine
           </p>
         </div>
-        <CartDrower />
+        <CartDrower tableId={tableId} />
       </div>
     </header>
   );

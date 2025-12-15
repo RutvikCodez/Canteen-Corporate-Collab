@@ -6,7 +6,7 @@ const Page = async ({ params }: { params: Promise<{ tableId: string }> }) => {
   const { tableId } = await params;
   return (
     <main className="bg-background min-h-screen">
-      <Header />
+      <Header tableId={tableId} />
       <Items />
     </main>
   );
