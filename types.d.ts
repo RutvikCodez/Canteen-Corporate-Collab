@@ -41,3 +41,10 @@ type statCardProps = {
   Icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
   desc: string;
 };
+
+type topItemsProps = {
+  name: string;
+  orders: number;
+  revenue: number;
+  number: number;
+};

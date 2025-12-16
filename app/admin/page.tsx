@@ -1,5 +1,6 @@
 import SalesChart from "@/components/admin/SalesChart";
 import StatCard from "@/components/admin/StatCard";
+import TopSellingItems from "@/components/admin/TopSellingItems";
 import { statCardData } from "@/constants/data";
 
 const page = () => {
@@ -18,6 +19,7 @@ const page = () => {
       </div>
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
         <SalesChart />
+        <TopSellingItems />
       </div>
     </main>
   );

@@ -6,7 +6,9 @@ import {
   QrCode,
   Settings,
   Home,
-  DollarSign, Users, TrendingUp
+  Users,
+  TrendingUp,
+  IndianRupee,
 } from "lucide-react";
 
 export const foodCategories = [
@@ -168,13 +170,11 @@ export const navigation = [
   { name: "Settings", href: "/admin/settings", icon: Settings },
 ];
 
-
-
 export const statCardData: statCardProps[] = [
   {
     title: "Today's Revenue",
     value: "₹2,847.50",
-    Icon: DollarSign,
+    Icon: IndianRupee,
     desc: "+12.5% from yesterday",
   },
   {
@@ -205,4 +205,11 @@ export const salesData = [
   { name: "Fri", sales: 2800 },
   { name: "Sat", sales: 3200 },
   { name: "Sun", sales: 2400 },
+];
+
+export const topItems = [
+  { name: "Pizza Margherita", orders: 24, revenue: 455.76 },
+  { name: "Spaghetti Carbonara", orders: 18, revenue: 413.82 },
+  { name: "Classic Bruschetta", orders: 15, revenue: 134.85 },
+  { name: "Tiramisu", orders: 12, revenue: 119.88 },
 ]
