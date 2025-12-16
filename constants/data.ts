@@ -173,7 +173,7 @@ export const navigation = [
 export const statCardData: statCardProps[] = [
   {
     title: "Today's Revenue",
-    value: "$2,847.50",
+    value: "₹2,847.50",
     Icon: DollarSign,
     desc: "+12.5% from yesterday",
   },
@@ -191,8 +191,18 @@ export const statCardData: statCardProps[] = [
   },
   {
     title: "Avg Order Value",
-    value: "$22.42",
+    value: "₹22.42",
     Icon: TrendingUp,
     desc: "+3.1% from last week",
   },
 ];
+
+export const salesData = [
+  { name: "Mon", sales: 1200 },
+  { name: "Tue", sales: 1900 },
+  { name: "Wed", sales: 1600 },
+  { name: "Thu", sales: 2100 },
+  { name: "Fri", sales: 2800 },
+  { name: "Sat", sales: 3200 },
+  { name: "Sun", sales: 2400 },
+]

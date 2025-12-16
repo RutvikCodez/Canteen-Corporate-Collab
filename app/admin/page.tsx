@@ -1,3 +1,4 @@
+import SalesChart from "@/components/admin/SalesChart";
 import StatCard from "@/components/admin/StatCard";
 import { statCardData } from "@/constants/data";
 
@@ -14,6 +15,9 @@ const page = () => {
         {statCardData.map((card, index) => (
           <StatCard key={index} {...card} />
         ))}
+      </div>
+      <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
+        <SalesChart />
       </div>
     </main>
   );
