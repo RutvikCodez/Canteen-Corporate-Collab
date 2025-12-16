@@ -26,7 +26,7 @@ const CartDrower = ({ tableId }: { tableId: string }) => {
         </SheetHeader>
         <Cart tableId={tableId} />
       </SheetContent>
-    </Sheet>
+    </Sheet>        
   );
 };
 
