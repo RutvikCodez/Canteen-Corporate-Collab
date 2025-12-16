@@ -13,7 +13,7 @@ export default function AdminLayout({
       <MobileSidebar />
       <div>
         <TopBar />
-        {children}
+        <div className="py-6 px-4 sm:px-6 lg:px-8">{children}</div>
       </div>
     </div>
   );

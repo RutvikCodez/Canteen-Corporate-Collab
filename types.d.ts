@@ -34,3 +34,10 @@ type confirmationModalProps = {
   items: itemCardProps[];
   tableId: string | number;
 };
+
+type statCardProps = {
+  title: string;
+  value: string | number;
+  Icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+  desc: string;
+};

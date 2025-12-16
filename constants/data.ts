@@ -6,6 +6,7 @@ import {
   QrCode,
   Settings,
   Home,
+  DollarSign, Users, TrendingUp
 } from "lucide-react";
 
 export const foodCategories = [
@@ -165,4 +166,33 @@ export const navigation = [
   { name: "Payments", href: "/admin/payments", icon: CreditCard },
   { name: "Tables & QR", href: "/admin/tables", icon: QrCode },
   { name: "Settings", href: "/admin/settings", icon: Settings },
+];
+
+
+
+export const statCardData: statCardProps[] = [
+  {
+    title: "Today's Revenue",
+    value: "$2,847.50",
+    Icon: DollarSign,
+    desc: "+12.5% from yesterday",
+  },
+  {
+    title: "Orders Today",
+    value: 127,
+    Icon: ShoppingBag,
+    desc: "+8.2% from yesterday",
+  },
+  {
+    title: "Active Tables",
+    value: "8/12",
+    Icon: Users,
+    desc: "67% occupancy rate",
+  },
+  {
+    title: "Avg Order Value",
+    value: "$22.42",
+    Icon: TrendingUp,
+    desc: "+3.1% from last week",
+  },
 ];
